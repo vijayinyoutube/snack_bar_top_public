@@ -12,13 +12,13 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
           child: ElevatedButton(
-        onPressed: () => showSnackBar(context),
+        onPressed: () => showSnackBarFun(context),
         child: const Text('Show Snackbar'),
       )),
     );
   }
 
-  showSnackBar(context) {
+  showSnackBarFun(context) {
     SnackBar snackBar = SnackBar(
       content: const Text('Yay! A SnackBar at the top!',
           style: TextStyle(fontSize: 20)),
@@ -27,12 +27,10 @@ class HomePage extends StatelessWidget {
       behavior: SnackBarBehavior.floating,
       margin: EdgeInsets.only(
           bottom: MediaQuery.of(context).size.height - 150,
-          //top:150
           left: 10,
           right: 10),
     );
 
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
-  
 }
