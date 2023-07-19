@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
       dismissDirection: DismissDirection.up,
       behavior: SnackBarBehavior.floating,
       margin: EdgeInsets.only(
-          top: MediaQuery.of(context).size.height - 150,
+          bottom: MediaQuery.of(context).size.height - 150,
           left: 10,
           right: 10),
     );
