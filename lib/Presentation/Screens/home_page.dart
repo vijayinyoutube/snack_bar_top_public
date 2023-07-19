@@ -27,12 +27,10 @@ class HomePage extends StatelessWidget {
       behavior: SnackBarBehavior.floating,
       margin: EdgeInsets.only(
           bottom: MediaQuery.of(context).size.height - 150,
-          //top:150
           left: 10,
           right: 10),
     );
 
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
-  
 }
